@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Edit Profile - Price Tracking System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+<div class="container">
+    <h1>Edit Profile</h1>
+    <!-- <form method="POST" action="/edit_profile" enctype="multipart/form-data"> Enable file upload -->
+    <!-- <form method="POST" action="/edit_profile.html" enctype="multipart/form-data"> <!-- Corrected action URL -->
+
+
+    <form method="POST" action="/edit_profile" enctype="multipart/form-data"> <!-- Correct action -->
+        <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" id="profile-pic"> <!-- Placeholder -->
+            <input type="file" name="profile_picture" accept="image/*" onchange="previewImage(event)">
+        </div>
+        <input type="text" name="username" placeholder="Username" value="John Doe" required>
+        <input type="email" name="email" placeholder="Email" value="johndoe@example.com" required>
+        <input type="date" name="dob" placeholder="Date of Birth" value="1990-01-01" required>
+        <input type="text" name="location" placeholder="Location" value="New York, USA" required>
+        <textarea name="bio" placeholder="Bio" required>Tech enthusiast and price tracker.</textarea>
+        <button type="submit">Save Changes</button>
+    </form>
+    
+
+    <p><a href="/profile.html" style="color: #00ccff;">Back to Profile</a></p> <!-- Link to navigate back to profile -->
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Link to the JavaScript file -->
+<script>
+    function previewImage(event) {
+        const image = document.getElementById('profile-pic');
+        image.src = URL.createObjectURL(event.target.files[0]);
+    }
+</script>
+</body>
+</html>

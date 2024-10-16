@@ -1,0 +1,72 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>User Profile - Price Tracking System</title>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet"> <!-- Google Font -->
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}"> <!-- Link to the CSS file -->
+</head>
+<body>
+
+<div class="container">
+    <h1>User Profile</h1>
+    <div class="profile-summary">
+        <div class="profile-picture">
+            <img src="https://via.placeholder.com/150" alt="Profile Picture" id="profile-pic"> <!-- Placeholder for profile picture -->
+        </div>
+        <div class="user-details">
+            <p><strong>Full Name:</strong> John Doe</p>
+            <p><strong>Username:</strong> johndoe</p>
+            <p><strong>Email:</strong> johndoe@example.com</p>
+            <p><strong>Date of Birth:</strong> Jan 1, 1990</p>
+            <p><strong>Location:</strong> New York, USA</p>
+            <p><strong>Bio:</strong> Tech enthusiast and price tracker.</p>
+            <p><button><a href="/edit_profile.html" class="edit-button" style="color: white; text-decoration: none;">Edit Profile</a></button></p>
+        </div>        
+    </div>
+
+    <div class="subscription-info">
+        <h2>Subscription Information</h2>
+        <p><strong>Current Plan:</strong> Premium</p>
+        <p><strong>Start Date:</strong> Jan 1, 2024</p>
+        <p><strong>Renewal Date:</strong> Jan 1, 2025</p>
+        <p><strong>Payment Method:</strong> Credit Card</p>
+        <button>Upgrade Plan</button>
+    </div>
+
+    <div class="activity-history">
+        <h2>Activity History</h2>
+        <ul>
+            <li>Item A tracked</li>
+            <li>Price alert set for Item B</li>
+            <li>Item C tracked</li>
+        </ul>
+        <button>View All Activities</button>
+    </div>
+
+    <div class="settings">
+        <h2>Settings</h2>
+        <button>Change Password</button>
+        <button>Notification Preferences</button>
+        <button>Privacy Settings</button>
+    </div>
+
+    <div class="theme-language">
+        <h2>Preferences</h2>
+        <label for="theme-toggle">Theme:</label>
+        <input type="checkbox" id="theme-toggle" name="theme-toggle"> Dark Mode
+        <br>
+        <label for="language-selector">Language:</label>
+        <select id="language-selector" name="language">
+            <option value="en">English</option>
+            <option value="de">German</option>
+            <option value="fr">French</option>
+            <option value="zh">Chinese</option>
+        </select>
+    </div>
+</div>
+
+<script src="{{ url_for('static', filename='script.js') }}"></script> <!-- Link to the JavaScript file -->
+</body>
+</html>

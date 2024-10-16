@@ -1,0 +1,20 @@
+[
+    {
+        "username": "hitler",
+        "email": "hitler@gmail.com",
+        "password": "$2b$12$g1t47pWhCn0cZOW2s10.Y.MBVJuBpfaEotNUUPDVJFUkQ4l1Bd.zG"
+    },
+    {
+        "username": "Kiko Kilo",
+        "email": "kikokilo@gmail.com",
+        "password": "$2b$12$7T9.D6UtBg3K8ARZxZU9TuEMJtekwzkTyN2fmERPfTp3rk/.eyxkS",
+        "dob": "1990-01-01",
+        "location": "New York, USA",
+        "bio": "Tech enthusiast and price tracker."
+    },
+    {
+        "username": "kilo",
+        "email": "kilo@gmail.com",
+        "password": "$2b$12$xxnrLVujmKe1lk6gAZ83fu2qZ7qmBqxrW2wrtXRCwF99dlnwB2LAW"
+    }
+]

@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sidebar Example</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='styles.css') }}">
+</head>
+<body>
+    <!-- Sidebar content -->
+    <div id="mySidebar" class="sidebar">
+        <a href="javascript:void(0)" class="closebtn" onclick="closeSidebar()">×</a>
+        <a href="#">Home</a>
+        <a href="#">Services</a>
+        <a href="#">Clients</a>
+        <a href="#">Contact</a>
+    </div>
+
+    <!-- Main content area -->
+    <div id="main">
+        <button class="openbtn" onclick="openSidebar()">☰ Open Sidebar</button>
+        <h2>Collapsed Sidebar</h2>
+        <p>Click on the hamburger menu (☰) to open the sidebar, and click on the '×' to close it.</p>
+    </div>
+
+    <!-- JavaScript file inclusion -->
+    <script src="script.js"></script>
+</body>
+</html>
